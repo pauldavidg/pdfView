@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">pdfView</string>
+
+    <string-array name="bill_pad">
+        <item>Select</item>
+        <item>Sakthi Masala</item>
+        <item>Chilli Powder</item>
+        <item>Masala Powder</item>
+        <item>Chicken Masala</item>
+        <item>Matton Masala</item>
+    </string-array>
+</resources>
