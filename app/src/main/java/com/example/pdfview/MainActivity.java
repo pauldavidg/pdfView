@@ -167,11 +167,12 @@ public class MainActivity extends AppCompatActivity {
                     canvas.drawText("Qty", 900, 830, myPaint);
                     canvas.drawText("Total", 1050, 830, myPaint);
 
-                    canvas.drawLine(180, 790, 180, 1360, myPaint);
-                    canvas.drawLine(100, 790, 100, 1360, myPaint);
-                    canvas.drawLine(480, 790, 480, 1360, myPaint);
-                    canvas.drawLine(880, 790, 880, 1360, myPaint);
-                    canvas.drawLine(1030, 790, 1030, 1360, myPaint);
+                    canvas.drawLine(180, 780, 180, 1220, myPaint);
+                    canvas.drawLine(100, 780, 100, 1220, myPaint);
+                    canvas.drawLine(480, 780, 480, 1220, myPaint);
+                    canvas.drawLine(680, 780, 680, 1220, myPaint);
+                    canvas.drawLine(880, 780, 880, 1220, myPaint);
+                    canvas.drawLine(1030, 780, 1030, 1220, myPaint);
 
                     float total1 = 0, total2 = 0, total3 = 0, total4 = 0, total5 = 0;
                     if (item1Spinner.getSelectedItemPosition()!=0)
@@ -179,75 +180,137 @@ public class MainActivity extends AppCompatActivity {
 
                         myPaint.setStyle(Paint.Style.STROKE);
                         myPaint.setStrokeWidth(2f);
-                        canvas.drawRect(20, 780, pageWidth-20, 960, myPaint);
+                        canvas.drawRect(20, 860, pageWidth-20, 920, myPaint);
 
                         myPaint.setTextAlign(Paint.Align.LEFT);
                         myPaint.setStyle(Paint.Style.FILL);
-                        canvas.drawText("1.", 40, 950, myPaint);
-                        canvas.drawText("450", 110, 950, myPaint);
-                        canvas.drawText(item1Spinner.getSelectedItem().toString(), 200, 950, myPaint);
-                        canvas.drawText(String.valueOf(prices[item1Spinner.getSelectedItemPosition()]), 700, 950, myPaint);
-                        canvas.drawText(qty1.getText().toString(), 900, 950, myPaint);
+                        canvas.drawText("1.", 40, 910, myPaint);
+                        canvas.drawText("450", 110, 910, myPaint);
+                        canvas.drawText(item1Spinner.getSelectedItem().toString(), 200, 910, myPaint);
+                        canvas.drawText(String.valueOf(prices[item1Spinner.getSelectedItemPosition()]), 700, 910, myPaint);
+                        canvas.drawText(qty1.getText().toString(), 900, 910, myPaint);
                         total1 = Float.parseFloat(qty1.getText().toString())*prices[item1Spinner.getSelectedItemPosition()];
                         myPaint.setTextAlign(Paint.Align.RIGHT);
-                        canvas.drawText(String.valueOf(total1), pageWidth-40, 950, myPaint);
+                        canvas.drawText(String.valueOf(total1), pageWidth-40, 910, myPaint);
                         myPaint.setTextAlign(Paint.Align.LEFT);
 
-                        canvas.drawLine(180, 790, 180, 960, myPaint);
-                        canvas.drawLine(100, 790, 100, 960, myPaint);
-                        canvas.drawLine(480, 790, 480, 960, myPaint);
-                        canvas.drawLine(880, 790, 880, 960, myPaint);
-                        canvas.drawLine(1030, 790, 1030, 960, myPaint);
+                        canvas.drawLine(480, 790, 480, 920, myPaint);
+                        canvas.drawLine(880, 790, 880, 920, myPaint);
+                        canvas.drawLine(180, 790, 180, 920, myPaint);
+                        canvas.drawLine(100, 790, 100, 920, myPaint);
+                        canvas.drawLine(1030, 790, 1030, 920, myPaint);
 
                     }
                     if (item2Spinner.getSelectedItemPosition()!=0) {
 
                         myPaint.setStyle(Paint.Style.STROKE);
                         myPaint.setStrokeWidth(2f);
-                        canvas.drawRect(20, 780, pageWidth-20, 1060, myPaint);
+                        canvas.drawRect(20, 920, pageWidth-20, 980, myPaint);
 
 
                         myPaint.setTextAlign(Paint.Align.LEFT);
                         myPaint.setStyle(Paint.Style.FILL);
-                        canvas.drawText("2.", 40, 1050, myPaint);
-                        canvas.drawText("550", 110, 1050, myPaint);
-                        canvas.drawText(item2Spinner.getSelectedItem().toString(), 200, 1050, myPaint);
-                        canvas.drawText(String.valueOf(prices[item2Spinner.getSelectedItemPosition()]), 700, 1050, myPaint);
-                        canvas.drawText(qty2.getText().toString(), 900, 1050, myPaint);
+                        canvas.drawText("2.", 40, 970, myPaint);
+                        canvas.drawText("550", 110, 970, myPaint);
+                        canvas.drawText(item2Spinner.getSelectedItem().toString(), 200, 970, myPaint);
+                        canvas.drawText(String.valueOf(prices[item2Spinner.getSelectedItemPosition()]), 700, 970, myPaint);
+                        canvas.drawText(qty2.getText().toString(), 900, 970, myPaint);
                         total2 = Float.parseFloat(qty2.getText().toString())*prices[item2Spinner.getSelectedItemPosition()];
                         myPaint.setTextAlign(Paint.Align.RIGHT);
-                        canvas.drawText(String.valueOf(total2), pageWidth-40, 1050, myPaint);
+                        canvas.drawText(String.valueOf(total2), pageWidth-40, 970, myPaint);
                         myPaint.setTextAlign(Paint.Align.LEFT);
 
-                        canvas.drawLine(180, 790, 180, 1060, myPaint);
-                        canvas.drawLine(100, 790, 100, 1060, myPaint);
-                        canvas.drawLine(680, 790, 680, 1060, myPaint);
-                        canvas.drawLine(880, 790, 880, 1060, myPaint);
-                        canvas.drawLine(1030, 790, 1030, 1060, myPaint);
-
+                        canvas.drawLine(180, 790, 180, 980, myPaint);
+                        canvas.drawLine(100, 790, 100, 980, myPaint);
+                        canvas.drawLine(680, 790, 680, 980, myPaint);
+                        canvas.drawLine(880, 790, 880, 980, myPaint);
+                        canvas.drawLine(1030, 790, 1030, 980, myPaint);
 
                     }
 
                     if (item3Spinner.getSelectedItemPosition()!=0)
                     {
 
+
                         myPaint.setStyle(Paint.Style.STROKE);
                         myPaint.setStrokeWidth(2f);
-                        canvas.drawRect(20, 780, pageWidth-20, 1160, myPaint);
+                        canvas.drawRect(20, 980, pageWidth-20, 1040, myPaint);
+
 
                         myPaint.setTextAlign(Paint.Align.LEFT);
                         myPaint.setStyle(Paint.Style.FILL);
-                        canvas.drawText("3.", 40, 1150, myPaint);
-                        canvas.drawText("350", 110, 1150, myPaint);
-                        canvas.drawText(item3Spinner.getSelectedItem().toString(), 200, 1150, myPaint);
-                        canvas.drawText(String.valueOf(prices[item3Spinner.getSelectedItemPosition()]), 700, 1150, myPaint);
-                        canvas.drawText(qty3.getText().toString(), 900, 1150, myPaint);
+                        canvas.drawText("3.", 40, 1030, myPaint);
+                        canvas.drawText("350", 110, 1030, myPaint);
+                        canvas.drawText(item3Spinner.getSelectedItem().toString(), 200, 1030, myPaint);
+                        canvas.drawText(String.valueOf(prices[item3Spinner.getSelectedItemPosition()]), 700, 1030, myPaint);
+                        canvas.drawText(qty3.getText().toString(), 900, 1030, myPaint);
                         total3 = Float.parseFloat(qty3.getText().toString())*prices[item3Spinner.getSelectedItemPosition()];
                         myPaint.setTextAlign(Paint.Align.RIGHT);
-                        canvas.drawText(String.valueOf(total3), pageWidth-40, 1150, myPaint);
+                        canvas.drawText(String.valueOf(total3), pageWidth-40, 1030, myPaint);
                         myPaint.setTextAlign(Paint.Align.LEFT);
 
-                        canvas.drawLine(100, 790, 100, 1160, myPaint);
+
+                        canvas.drawLine(100, 790, 100, 1040, myPaint);
+                        canvas.drawLine(180, 790, 180, 1040, myPaint);
+                        canvas.drawLine(680, 790, 680, 1040, myPaint);
+                        canvas.drawLine(880, 790, 880, 1040, myPaint);
+                        canvas.drawLine(1030, 790, 1030, 1040, myPaint);
+
+
+                    }
+
+                    if (item4Spinner.getSelectedItemPosition()!=0)
+                    {
+
+
+                        myPaint.setStyle(Paint.Style.STROKE);
+                        myPaint.setStrokeWidth(2f);
+                        canvas.drawRect(20, 1040, pageWidth-20, 1100, myPaint);
+
+
+                        myPaint.setTextAlign(Paint.Align.LEFT);
+                        myPaint.setStyle(Paint.Style.FILL);
+                        canvas.drawText("4.", 40, 1090, myPaint);
+                        canvas.drawText("550", 110, 1090, myPaint);
+                        canvas.drawText(item4Spinner.getSelectedItem().toString(), 200, 1090, myPaint);
+                        canvas.drawText(String.valueOf(prices[item4Spinner.getSelectedItemPosition()]), 700, 1090, myPaint);
+                        canvas.drawText(qty4.getText().toString(), 900, 1090, myPaint);
+                        total4 = Float.parseFloat(qty4.getText().toString())*prices[item4Spinner.getSelectedItemPosition()];
+                        myPaint.setTextAlign(Paint.Align.RIGHT);
+                        canvas.drawText(String.valueOf(total4), pageWidth-40, 1090, myPaint);
+                        myPaint.setTextAlign(Paint.Align.LEFT);
+
+
+                        canvas.drawLine(180, 790, 180, 1100, myPaint);
+                        canvas.drawLine(680, 790, 680, 1100, myPaint);
+                        canvas.drawLine(880, 790, 880, 1100, myPaint);
+                        canvas.drawLine(1030, 790, 1030, 1100, myPaint);
+
+
+                    }
+
+                    if (item5Spinner.getSelectedItemPosition()!=0)
+                    {
+
+
+                        myPaint.setStyle(Paint.Style.STROKE);
+                        myPaint.setStrokeWidth(2f);
+                        canvas.drawRect(20, 1100, pageWidth-20, 1160, myPaint);
+
+
+                        myPaint.setTextAlign(Paint.Align.LEFT);
+                        myPaint.setStyle(Paint.Style.FILL);
+                        canvas.drawText("5.", 40, 1150, myPaint);
+                        canvas.drawText("450", 110, 1150, myPaint);
+                        canvas.drawText(item5Spinner.getSelectedItem().toString(), 200, 1150, myPaint);
+                        canvas.drawText(String.valueOf(prices[item5Spinner.getSelectedItemPosition()]), 700, 1150, myPaint);
+                        canvas.drawText(qty3.getText().toString(), 900, 1150, myPaint);
+                        total5 = Float.parseFloat(qty3.getText().toString())*prices[item3Spinner.getSelectedItemPosition()];
+                        myPaint.setTextAlign(Paint.Align.RIGHT);
+                        canvas.drawText(String.valueOf(total5), pageWidth-40, 1150, myPaint);
+                        myPaint.setTextAlign(Paint.Align.LEFT);
+
+
                         canvas.drawLine(180, 790, 180, 1160, myPaint);
                         canvas.drawLine(680, 790, 680, 1160, myPaint);
                         canvas.drawLine(880, 790, 880, 1160, myPaint);
@@ -255,84 +318,83 @@ public class MainActivity extends AppCompatActivity {
 
                     }
 
-                    if (item4Spinner.getSelectedItemPosition()!=0)
-                    {
-
-                        myPaint.setStyle(Paint.Style.STROKE);
-                        myPaint.setStrokeWidth(2f);
-                        canvas.drawRect(20, 780, pageWidth-20, 1260, myPaint);
-
-                        myPaint.setTextAlign(Paint.Align.LEFT);
-                        myPaint.setStyle(Paint.Style.FILL);
-                        canvas.drawText("4.", 40, 1250, myPaint);
-                        canvas.drawText("550", 110, 1250, myPaint);
-                        canvas.drawText(item4Spinner.getSelectedItem().toString(), 200, 1250, myPaint);
-                        canvas.drawText(String.valueOf(prices[item4Spinner.getSelectedItemPosition()]), 700, 1250, myPaint);
-                        canvas.drawText(qty4.getText().toString(), 900, 1250, myPaint);
-                        total4 = Float.parseFloat(qty4.getText().toString())*prices[item4Spinner.getSelectedItemPosition()];
-                        myPaint.setTextAlign(Paint.Align.RIGHT);
-                        canvas.drawText(String.valueOf(total4), pageWidth-40, 1250, myPaint);
-                        myPaint.setTextAlign(Paint.Align.LEFT);
-
-                        canvas.drawLine(180, 790, 180, 1260, myPaint);
-                        canvas.drawLine(680, 790, 680, 1260, myPaint);
-                        canvas.drawLine(880, 790, 880, 1260, myPaint);
-                        canvas.drawLine(1030, 790, 1030, 1260, myPaint);
-
-                    }
-
-                    if (item5Spinner.getSelectedItemPosition()!=0)
-                    {
-
-                        myPaint.setStyle(Paint.Style.STROKE);
-                        myPaint.setStrokeWidth(2f);
-                        canvas.drawRect(20, 780, pageWidth-20, 1360, myPaint);
-
-                        myPaint.setTextAlign(Paint.Align.LEFT);
-                        myPaint.setStyle(Paint.Style.FILL);
-                        canvas.drawText("5.", 40, 1350, myPaint);
-                        canvas.drawText("450", 110, 1350, myPaint);
-                        canvas.drawText(item5Spinner.getSelectedItem().toString(), 200, 1350, myPaint);
-                        canvas.drawText(String.valueOf(prices[item5Spinner.getSelectedItemPosition()]), 700, 1350, myPaint);
-                        canvas.drawText(qty3.getText().toString(), 900, 1350, myPaint);
-                        total5 = Float.parseFloat(qty3.getText().toString())*prices[item3Spinner.getSelectedItemPosition()];
-                        myPaint.setTextAlign(Paint.Align.RIGHT);
-                        canvas.drawText(String.valueOf(total5), pageWidth-40, 1350, myPaint);
-                        myPaint.setTextAlign(Paint.Align.LEFT);
-
-                        canvas.drawLine(180, 790, 180, 1360, myPaint);
-                        canvas.drawLine(680, 790, 680, 1360, myPaint);
-                        canvas.drawLine(880, 790, 880, 1360, myPaint);
-                        canvas.drawLine(1030, 790, 1030, 1360, myPaint);
-
-                    }
-
-
+                    myPaint.setStyle(Paint.Style.STROKE);
+                    myPaint.setStrokeWidth(2f);
+                    canvas.drawRect(20, 1160, pageWidth-20, 1220, myPaint);
+                    canvas.drawRect(20, 1220, pageWidth-20, 1280, myPaint);
+                    canvas.drawRect(20, 1280, pageWidth-20, 1340, myPaint);
+                    canvas.drawRect(20, 1340, pageWidth-20, 1400, myPaint);
+                    canvas.drawRect(20, 1400, pageWidth-20, 1460, myPaint);
 
                     float subtotal = total1 + total2 + total3 + total4 + total5;
-                    canvas.drawLine(680, 1500, pageWidth-20, 1500, myPaint);
-                    canvas.drawText("sub total", 700, 1550, myPaint);
-                    canvas.drawText(":", 900, 1550, myPaint);
-                    myPaint.setTextAlign(Paint.Align.RIGHT);
-                    canvas.drawText(String.valueOf(subtotal), pageWidth-40, 1550, myPaint);
 
                     myPaint.setTextAlign(Paint.Align.LEFT);
-                    canvas.drawText("Tax (12%)", 700, 1600, myPaint);
-                    canvas.drawText(":", 900, 1600, myPaint);
+                    myPaint.setStyle(Paint.Style.FILL);
+                    canvas.drawText("Bank Name", 40, 1270, myPaint);
+                    canvas.drawText("Account Number", 40, 1330, myPaint);
+                    canvas.drawText("IFSC Code", 40, 1390, myPaint);
+                    canvas.drawText("Brance Name", 40, 1450, myPaint);
+
+                     //Taxable Amount
                     myPaint.setTextAlign(Paint.Align.RIGHT);
-                    canvas.drawText(String.valueOf(subtotal*12/100), pageWidth-40, 1600, myPaint);
+                    canvas.drawText(String.valueOf(subtotal), pageWidth-40, 1270, myPaint);
                     myPaint.setTextAlign(Paint.Align.LEFT);
 
+                    //Discount Amount
+                    myPaint.setTextAlign(Paint.Align.RIGHT);
+                    canvas.drawText("0.0", pageWidth-40, 1330, myPaint);
+                    myPaint.setTextAlign(Paint.Align.LEFT);
+
+                    //Tax Amount
+                    myPaint.setTextAlign(Paint.Align.RIGHT);
+                    canvas.drawText(String.valueOf(subtotal*12/100), pageWidth-40, 1390, myPaint);
+                    myPaint.setTextAlign(Paint.Align.LEFT);
+
+                    //Bill Amount
+                    myPaint.setTextAlign(Paint.Align.RIGHT);
+                    canvas.drawText(String.valueOf(subtotal + (subtotal*12/100)), pageWidth-40, 1450, myPaint);
+                    myPaint.setTextAlign(Paint.Align.LEFT);
+
+
+
+
+
+
+                    canvas.drawText("SubTotal Amount", 700, 1270, myPaint);
+                    canvas.drawText("Discount Amount", 700, 1330, myPaint);
+                    canvas.drawText("Tax Amount(12%)", 700, 1390, myPaint);
+                    canvas.drawText("Bill Amount", 700, 1450, myPaint);
+
+                    canvas.drawLine(280, 1220, 280, 1460, myPaint);
+                    canvas.drawLine(690, 1220, 690, 1460, myPaint);
+                    canvas.drawLine(950, 1220, 950, 1460, myPaint);
+
+
+                  /*  canvas.drawLine(680, 790, 680, 1400, myPaint);
+                    canvas.drawLine(880, 790, 880, 1400, myPaint);
+                    canvas.drawLine(1030, 790, 1030, 1400, myPaint);*/
+                  /* canvas.drawLine(680, 1600, pageWidth-20, 1600, myPaint);
+                    canvas.drawText("sub total", 700, 1650, myPaint);
+                    canvas.drawText(":", 900, 1650, myPaint);
+                    myPaint.setTextAlign(Paint.Align.RIGHT);
+                    canvas.drawText(String.valueOf(subtotal), pageWidth-40, 1650, myPaint);
+
+                    myPaint.setTextAlign(Paint.Align.LEFT);
+                    canvas.drawText("Tax (12%)", 700, 1700, myPaint);
+                    canvas.drawText(":", 900,   1700, myPaint);
+                    myPaint.setTextAlign(Paint.Align.RIGHT);
+                    canvas.drawText(String.valueOf(subtotal*12/100), pageWidth-40, 1700, myPaint);
+                    myPaint.setTextAlign(Paint.Align.LEFT);
+*/
                     myPaint.setColor(Color.rgb(247, 147, 30));
-                    canvas.drawRect(680, 1650, pageWidth-20, 1750, myPaint);
+                    canvas.drawRect(680, 1500, pageWidth-20, 1600, myPaint);
 
                     myPaint.setColor(Color.BLACK);
                     myPaint.setTextSize(50f);
                     myPaint.setTextAlign(Paint.Align.LEFT);
-                    canvas.drawText("Total", 700, 1715, myPaint);
+                    canvas.drawText("Total :", 700, 1570, myPaint);
                     myPaint.setTextAlign(Paint.Align.RIGHT);
-                    canvas.drawText(String.valueOf(subtotal + (subtotal*12/100)), pageWidth-40, 1715, myPaint);
-
+                    canvas.drawText(String.valueOf(subtotal + (subtotal*12/100)), pageWidth-40, 1570, myPaint);
 
                     myPdfDocument.finishPage(myPage1);
 
@@ -346,17 +408,11 @@ public class MainActivity extends AppCompatActivity {
                     chooser.setDataAndType(uri, "*/*");
                     try {
                         myPdfDocument.writeTo(new FileOutputStream(file));
-
                         startActivity(intent);
-
                     } catch (IOException e) {
-
-
-
                         e.printStackTrace();
                     }
                     myPdfDocument.close();
-
                 }
             }
 
